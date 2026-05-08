@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 1880 >>
+stream
+BT /F1 12 Tf 54 738 Td (Título) Tj ET
+BT /F1 12 Tf 54 706 Td (Guia rápido: como o Tetris em python funciona) Tj ET
+BT /F1 12 Tf 54 658 Td (Objetivo) Tj ET
+BT /F1 12 Tf 54 626 Td (Explicar de forma simples como o arquivo tetris.py organiza um jogo completo, para quem) Tj ET
+BT /F1 12 Tf 54 610 Td (está começando em Python.) Tj ET
+BT /F1 12 Tf 54 578 Td (O foco é entender a estrutura geral, sem precisar conhecer cada detalhe matemático.) Tj ET
+BT /F1 12 Tf 54 530 Td (Bibliotecas usadas) Tj ET
+BT /F1 12 Tf 54 498 Td (O jogo usa a biblioteca pygame para janela, desenhos, fontes e capturar teclado.) Tj ET
+BT /F1 12 Tf 54 466 Td (Só precisamos do Python e do pygame instalados para rodar o tetris.py.) Tj ET
+BT /F1 12 Tf 54 418 Td (Como o código está organizado) Tj ET
+BT /F1 12 Tf 54 386 Td (Constantes definem cores, tamanhos dos blocos, velocidade e formatos das peças.) Tj ET
+BT /F1 12 Tf 54 354 Td (A matriz grid guarda quais células do campo já estão ocupadas e suas cores.) Tj ET
+BT /F1 12 Tf 54 322 Td (Cada peça \\(Tetromino\\) guarda posição, formato e cor. A forma é uma lista de coordenadas) Tj ET
+BT /F1 12 Tf 54 306 Td (relativas.) Tj ET
+BT /F1 12 Tf 54 274 Td (Há funções para rotacionar a peça, checar colisão e encaixar a peça no grid quando ela) Tj ET
+BT /F1 12 Tf 54 258 Td (para.) Tj ET
+BT /F1 12 Tf 54 226 Td (Um gerador sorteia a próxima peça e mantém a pré-visualização para o jogador.) Tj ET
+BT /F1 12 Tf 54 178 Td (Loop principal do jogo) Tj ET
+BT /F1 12 Tf 54 146 Td (O loop roda enquanto a janela estiver aberta ou até dar game over.) Tj ET
+BT /F1 12 Tf 54 114 Td (A cada ciclo: lê o teclado, atualiza a peça atual, verifica colisões e redesenha a tela.) Tj ET
+BT /F1 12 Tf 54 82 Td (Se a peça encosta no chão ou em outra peça, ela é fixada no grid e uma nova peça é) Tj ET
+BT /F1 12 Tf 54 66 Td (criada.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 1764 >>
+stream
+BT /F1 12 Tf 54 722 Td (Linhas completas são removidas; o placar e o nível aumentam conforme o número de linhas.) Tj ET
+BT /F1 12 Tf 54 674 Td (Controles importantes) Tj ET
+BT /F1 12 Tf 54 642 Td (Setas: mover para os lados e acelerar para baixo.) Tj ET
+BT /F1 12 Tf 54 610 Td (Barra de espaço: queda imediata \\(hard drop\\) para posicionar a peça rápido.) Tj ET
+BT /F1 12 Tf 54 578 Td (Z ou seta para cima: rotacionar a peça.) Tj ET
+BT /F1 12 Tf 54 546 Td (R: reinicia a partida quando quiser recomeçar.) Tj ET
+BT /F1 12 Tf 54 498 Td (Recursos visuais e efeitos) Tj ET
+BT /F1 12 Tf 54 466 Td (Plano de fundo em gradiente e grades iluminadas deixam o visual moderno.) Tj ET
+BT /F1 12 Tf 54 434 Td (Blocos possuem brilho e sombreamento simples para parecerem peças de vidro.) Tj ET
+BT /F1 12 Tf 54 402 Td (Uma “peça fantasma” mostra onde a peça atual vai pousar, ajudando a planejar.) Tj ET
+BT /F1 12 Tf 54 370 Td (Partículas aparecem quando linhas são removidas, dando feedback ao jogador.) Tj ET
+BT /F1 12 Tf 54 322 Td (Por que funciona) Tj ET
+BT /F1 12 Tf 54 290 Td (A grade funciona como um tabuleiro 2D; cada peça só se move se as próximas células) Tj ET
+BT /F1 12 Tf 54 274 Td (estiverem livres.) Tj ET
+BT /F1 12 Tf 54 242 Td (Ao rotacionar, o código verifica se a nova posição cabe. Se não couber, volta à posição) Tj ET
+BT /F1 12 Tf 54 226 Td (anterior.) Tj ET
+BT /F1 12 Tf 54 194 Td (A remoção de linhas ocorre ao encontrar uma linha totalmente ocupada; depois, o restante) Tj ET
+BT /F1 12 Tf 54 178 Td (desce.) Tj ET
+BT /F1 12 Tf 54 146 Td (O tempo controla quando a peça cai sozinha, e aumenta a velocidade conforme o nível) Tj ET
+BT /F1 12 Tf 54 130 Td (sobe.) Tj ET
+BT /F1 12 Tf 54 82 Td (Como estudar o arquivo) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 893 >>
+stream
+BT /F1 12 Tf 54 738 Td (Leia as constantes no topo para entender as cores e tamanhos.) Tj ET
+BT /F1 12 Tf 54 706 Td (Veja a classe ou estrutura que representa as peças e como elas rodam com uma lista de) Tj ET
+BT /F1 12 Tf 54 690 Td (offsets.) Tj ET
+BT /F1 12 Tf 54 658 Td (Acompanhe o loop principal no final do arquivo: nele estão as chamadas de entrada,) Tj ET
+BT /F1 12 Tf 54 642 Td (atualização e desenho.) Tj ET
+BT /F1 12 Tf 54 610 Td (Experimente mudar cores ou velocidades para sentir como pequenas mudanças afetam o jogo.) Tj ET
+BT /F1 12 Tf 54 562 Td (Próximos passos) Tj ET
+BT /F1 12 Tf 54 530 Td (Adicione sons para quedas e limpeza de linhas usando pygame.mixer.) Tj ET
+BT /F1 12 Tf 54 498 Td (Crie um placar mais elaborado com recordes salvos em arquivo.) Tj ET
+BT /F1 12 Tf 54 466 Td (Implemente modo fácil mudando a velocidade base ou aumentando o campo de jogo.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000002128 00000 n 
+0000002254 00000 n 
+0000004069 00000 n 
+0000004195 00000 n 
+0000005138 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5264
+%%EOF
